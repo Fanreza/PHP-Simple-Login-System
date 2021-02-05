@@ -1,5 +1,17 @@
 <?php 
-	require "fungsi.php";
+	require "template/fungsi.php";
+
+	if (isset($_SESSION["login"] )) {
+		if ($_SESSION['login-verif'] === 'admin') {
+			header("Location: dashboard-admin.php");
+			exit;
+		}
+		else {
+			header("Location: dashboard-user.php");
+			exit;
+		}
+	}
+
 
 
 	if (isset($_POST["login"])) {
@@ -12,13 +24,14 @@
 <html>
 <head>
 	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="aset/img/logokampak.png">
+	<link rel="stylesheet" type="text/css" href="aset/css/style.css">
 </head>
 <body>
 	<div class="container">
 		<div class="login-box">
 			<div class="image">
-				<img src="aset/logokampak.png">
+				<img src="aset/img/logokampak.png">
 			</div>
 			<div class="form">
 				<form action="" method="post">

@@ -1,14 +1,13 @@
 <?php 
-	require 'template/fungsi.php';
-
-	if( isset($_POST['register']) ){
+require_once "fungsi.php";
 
 
-		if(registrasi($_POST) > 0 ){
+	if( isset($_POST['tambah']) ){
+		if(tambah($_POST) > 0 ){
 			echo "<script> 
 
-				    alert('Anda berhasil didaftarkan');
-				    window.location.href = 'login.php';
+				    alert('data berhasil ditambahkan');
+				    window.location.href = '../data-admin.php';
 
 				  </script>";
 		}
@@ -17,20 +16,24 @@
 		}
 	}
 
-?>
+
+ ?>
+
+
+
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrasi</title>
-	<link rel="icon" type="image/png" href="aset/img/logokampak.png">
-	<link rel="stylesheet" type="text/css" href="aset/css/style.css">
+	<title>Tambah</title>
+	<link rel="icon" type="image/png" href="../aset/img/logokampak.png">
+	<link rel="stylesheet" type="text/css" href="../aset/css/style.css">
 </head>
 <body>
 	<div class="container">
 		<div class="regis-box">
 			<div class="head">
-				<h1>Pendaftaran Anggota</h1>
+				<h1>Tambah Data Anggota</h1>
 			</div>
 			<div class="form-regis">
 				<form action="" method="post" enctype="multipart/form-data">
@@ -64,8 +67,7 @@
 					
 
 					<div class="button-regis">
-						<button class="submit" name="register">Daftar</button>
-						<a href="login.php">Batal</a>
+						<button class="submit" name="tambah">Tambah Data</button>
 					</div>
 				</form>
 			</div>
