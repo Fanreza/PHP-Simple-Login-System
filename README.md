@@ -20,5 +20,5 @@ a simple login system that I made using php
 
 NOTE:
 
-All templating page is on template folder.
+All templating page is on template folder.<br>
 Edit Logic on file name "Fungsi.php".
