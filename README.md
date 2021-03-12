@@ -5,20 +5,20 @@ a simple login system that I made using php
 1. Registrasion
 2. Login
 
-   # Admin Page Feature
-   1. Add Data
-   2. Delete Data
-   3. Edit Data
+# Admin Page Feature
+  1. Add Data
+  2. Delete Data
+  3. Edit Data
 
-   # User Page Feature
-   1. see his data
+# User Page Feature
+  1. see his data
 
-   # Profile Page Feature
-   1. Edit Profil Data
-   2. Change Password
+# Profile Page Feature
+  1. Edit Profil Data
+  2. Change Password
 
 
 NOTE:
 
-All templating page is on template folder
-Edit Logic on file name "Fungsi.php"
+All templating page is on template folder.
+Edit Logic on file name "Fungsi.php".
